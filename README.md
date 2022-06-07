@@ -33,3 +33,6 @@ Things you may want to cover:
 * Check api collection file
 - blog.postman_collection
 
+* JWT 
+* Ref : https://www.pluralsight.com/guides/token-based-authentication-with-ruby-on-rails-5-api
+

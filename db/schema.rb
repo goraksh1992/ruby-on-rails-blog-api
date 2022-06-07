@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_06_103613) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_07_100308) do
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.text "body"
@@ -19,10 +19,21 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_06_103613) do
     t.integer "user_id"
   end
 
+  create_table "rest_clients", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.string "api_key"
+    t.string "secret"
+    t.boolean "is_master"
+    t.boolean "disabled"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "full_name"
     t.string "email"
-    t.string "password"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

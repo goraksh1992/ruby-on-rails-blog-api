@@ -22,7 +22,7 @@ gem "puma", "~> 5.0"
 # gem "kredis"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
-# gem "bcrypt", "~> 3.1.7"
+gem "bcrypt", "~> 3.1.7"
 
 gem "tzinfo"
 
@@ -32,6 +32,14 @@ gem "tzinfo-data"
 
 # jbuilder
 gem "jbuilder"
+
+# 
+gem 'responders'
+
+# Token
+gem 'jwt'
+
+gem 'simple_command'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false

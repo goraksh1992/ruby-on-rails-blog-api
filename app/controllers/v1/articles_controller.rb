@@ -1,5 +1,9 @@
 class V1::ArticlesController < ApplicationController
 
+    # include RestfulApiAuthentication
+    # respond_to :json, :xml
+    # before_action :authenticated?
+
     def index
         @articles = Article.all
     end
